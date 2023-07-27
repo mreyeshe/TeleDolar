@@ -18,11 +18,6 @@ public class EFContext : DbContext
     /// </summary>
     public virtual DbSet<Remesa> Remesa { get; set; }
 
-    ///// <summary>
-    ///// Gets or sets Base Domain Object.
-    ///// </summary>
-    //public virtual DbSet<BaseDomainEvent> BaseDomain { get; set; }
-
     /// <summary>
     /// Initializes a new instance of the <see cref="EFContext"/> class.
     /// Constructor db context options.

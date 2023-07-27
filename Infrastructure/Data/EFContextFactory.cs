@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 namespace Infrastructure.Data;
 
 /// <summary>
-/// Remesa Contex Class.
+/// Remesa Contex Factory for migrations Class.Recommended erase this file for protection sensible data.
 /// </summary>
 public class EFContextFactory : IDesignTimeDbContextFactory<EFContext>
 {
