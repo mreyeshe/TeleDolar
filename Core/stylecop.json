@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "TeleDolar",
+      "copyrightText": "This source code is Free and MAY BE copied, reproduced,\npublished, distributed or transmitted to or stored in any manner."
+    }
+  }
+}

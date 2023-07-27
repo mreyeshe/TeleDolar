@@ -1,0 +1,47 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:40472",
+      "sslPort": 44350
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5131",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SEQ_URL": "http://localhost:5341",
+        "DB_CONNECTION_STRING": "Data Source=LIBERO\\SQLEXPRESS;Trust Server Certificate=true;Initial Catalog=TeleDolar;User ID=sa;Password=D354rr0ll0"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7176;http://localhost:5131",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SEQ_URL": "http://localhost:5341",
+        "DB_CONNECTION_STRING": "Data Source=LIBERO\\SQLEXPRESS;Trust Server Certificate=true;Initial Catalog=TeleDolar;User ID=sa;Password=D354rr0ll0"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SEQ_URL": "http://localhost:5341",
+        "DB_CONNECTION_STRING": "Data Source=LIBERO\\SQLEXPRESS;Trust Server Certificate=true;Initial Catalog=TeleDolar;User ID=sa;Password=D354rr0ll0"
+      }
+    }
+  }
+}
