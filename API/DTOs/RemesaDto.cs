@@ -11,6 +11,14 @@ namespace API.DTOs;
 public class RemesaDto
 {
     /// <summary>
+    /// Gets or sets Id.
+    /// </summary>
+    /// <value>
+    /// The Id.
+    /// </value>
+    public int Id { get; set; }
+
+    /// <summary>
     /// Gets or sets sender name.
     /// </summary>
     /// <value>
@@ -19,7 +27,6 @@ public class RemesaDto
     [Required]
     [StringLength(50)]
     public string NombreRemitente { get; set; }
-
 
     /// <summary>
     /// Gets or sets beneficiary name.

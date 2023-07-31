@@ -43,12 +43,14 @@ public class RemesaService : BaseService
 
         var repository = this.UnitOfWork.AsyncRepository<Remesa>();
         await repository.AddAsync(remesa);
-        await this.UnitOfWork.SaveChangesAsync();
+        var result = await this.UnitOfWork.SaveChangesAsync();
 
         var response = new CreateRemesaResponse()
         {
             Id = remesa.Id,
-            Message = "Ok",
+            Message = result == 1 ? "Ok" : "Error",
+            Success = result == 1 ? true : false,
+            ErrorMessage = result == 1 ? string.Empty : "Ocurrio un error al salvar la información.",
         };
 
         return response;

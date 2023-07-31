@@ -19,8 +19,9 @@ public interface IUnitOfWork
     Task<int> SaveChangesAsync();
 
     /// <summary>
-    /// Ascyn operations.
+    /// Generic async operations.
     /// </summary>
     /// <returns>T model.</returns>
-    IAsyncRepository<T> AsyncRepository<T>() where T : BaseEntity;
+    IAsyncRepository<T> AsyncRepository<T>()
+        where T : BaseEntity;
 }
